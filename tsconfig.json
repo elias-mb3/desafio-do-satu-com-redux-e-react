@@ -7,21 +7,14 @@
     "skipLibCheck": true,
 
     /* Bundler mode */
-    "moduleResolution": "node",
-    "allowSyntheticDefaultImports": true,
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx",
-
-    /* Linting */
-    "strict": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true,
     "baseUrl": ".",
 
-    /* Paths */
     "paths": {
       "@/components*": ["./src/components*"],
       "@/enums*": ["./src/enums*"],
@@ -30,8 +23,17 @@
       "@/pages*": ["./src/pages*"],
       "@/schemas*": ["./src/schemas*"],
       "@/styles*": ["./src/styles*"],
-      "@/utils*": ["./src/utils*"]
-    }
+      "@/utils*": ["./src/utils*"],
+      "@/requests*": ["./src/requests*"],
+      "@/types*": ["./src/@types*"],
+      "@/redux*": ["./src/redux*"],
+    },
+
+    /* Linting */
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true
   },
   "include": ["src"],
   "references": [{ "path": "./tsconfig.node.json" }]
